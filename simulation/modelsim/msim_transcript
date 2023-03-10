@@ -12,83 +12,97 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/El\ supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl {C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegGENERAL.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:34:01 on Mar 10,2023
+# Start time: 16:43:15 on Mar 10,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl" C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegGENERAL.v 
 # -- Compiling module SC_RegGENERAL
 # 
 # Top level modules:
 # 	SC_RegGENERAL
-# End time: 16:34:02 on Mar 10,2023, Elapsed time: 0:00:01
+# End time: 16:43:16 on Mar 10,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/El\ supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl {C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_DEBOUNCE1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:34:02 on Mar 10,2023
+# Start time: 16:43:16 on Mar 10,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl" C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_DEBOUNCE1.v 
 # -- Compiling module SC_DEBOUNCE1
 # 
 # Top level modules:
 # 	SC_DEBOUNCE1
-# End time: 16:34:02 on Mar 10,2023, Elapsed time: 0:00:00
+# End time: 16:43:16 on Mar 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/El\ supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl {C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_STATEMACHINE.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:34:02 on Mar 10,2023
+# Start time: 16:43:16 on Mar 10,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl" C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_STATEMACHINE.v 
 # -- Compiling module SC_STATEMACHINE
 # 
 # Top level modules:
 # 	SC_STATEMACHINE
-# End time: 16:34:02 on Mar 10,2023, Elapsed time: 0:00:00
+# End time: 16:43:16 on Mar 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/El\ supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1 {C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:34:02 on Mar 10,2023
+# Start time: 16:43:16 on Mar 10,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1" C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v 
 # -- Compiling module BB_SYSTEM
 # 
 # Top level modules:
 # 	BB_SYSTEM
-# End time: 16:34:02 on Mar 10,2023, Elapsed time: 0:00:00
+# End time: 16:43:16 on Mar 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/El\ supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl {C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegSHIFTER.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:34:02 on Mar 10,2023
+# Start time: 16:43:16 on Mar 10,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl" C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegSHIFTER.v 
 # -- Compiling module SC_RegSHIFTER
 # 
 # Top level modules:
 # 	SC_RegSHIFTER
-# End time: 16:34:02 on Mar 10,2023, Elapsed time: 0:00:00
+# End time: 16:43:17 on Mar 10,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/El\ supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim {C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim/TB_SYSTEM.vt}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:34:03 on Mar 10,2023
+# Start time: 16:43:17 on Mar 10,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim" C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim/TB_SYSTEM.vt 
 # -- Compiling module TB_SYSTEM
 # 
 # Top level modules:
 # 	TB_SYSTEM
-# End time: 16:34:03 on Mar 10,2023, Elapsed time: 0:00:00
+# End time: 16:43:17 on Mar 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  TB_SYSTEM
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" TB_SYSTEM 
-# Start time: 16:34:04 on Mar 10,2023
+# Start time: 16:43:17 on Mar 10,2023
 # Loading work.TB_SYSTEM
 # Loading work.BB_SYSTEM
 # Loading work.SC_DEBOUNCE1
 # Loading work.SC_STATEMACHINE
 # Loading work.SC_RegSHIFTER
 # Loading work.SC_RegGENERAL
-# ** Error: (vsim-3389) C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim/TB_SYSTEM.vt(45): Port 'BB_SYSTEM_data_InBUS' not found in the connected module (6th connection).
-#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0 File: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v
-# ** Fatal: (vsim-3365) C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim/TB_SYSTEM.vt(45): Too many port connections. Expected 5, found 6.
-#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0 File: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v
-# FATAL ERROR while loading design
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./BB_SYSTEM_run_msim_rtl_verilog.do PAUSED at line 16
-# End time: 16:35:06 on Mar 10,2023, Elapsed time: 0:01:02
-# Errors: 2, Warnings: 0
+# ** Warning: (vsim-3015) C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v(83): [PCDPC] - Port size (8) does not match connection size (1) for port 'SC_RegSHIFTER_shiftselection_In'. The port definition is at: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegSHIFTER.v(27).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_r0 File: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegSHIFTER.v
+# ** Warning: (vsim-3015) C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v(83): [PCDPC] - Port size (8) does not match connection size (1) for port 'SC_RegSHIFTER_data_OutBUS'. The port definition is at: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegSHIFTER.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_r0 File: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegSHIFTER.v
+# ** Warning: (vsim-3015) C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v(92): [PCDPC] - Port size (8) does not match connection size (1) for port 'SC_RegGENERAL_data_InBUS'. The port definition is at: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegGENERAL.v(29).
+#    Time: 0 ps  Iteration: 0  Instance: /TB_SYSTEM/BB_SYSTEM_u0/SC_RegGENERAL_u0 File: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegGENERAL.v
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: fsegura  Hostname: fsegura  ProcessID: 10400
+#           Attempting to use alternate WLF file "./wlfttj795x".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfttj795x
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+# 0 - Time: 90000000 TB_SYSTEM_clear_InLow:  1, TB_SYSTEM_load_InLow:  1  X
+# WARNING: No extended dataflow license exists
+# 1 - Time: 130000000 TB_SYSTEM_clear_InLow:  1, TB_SYSTEM_load_InLow:  1  X
+# 2 - Time: 170000000 TB_SYSTEM_clear_InLow:  1, TB_SYSTEM_load_InLow:  1  X
+# 3 - Time: 210000000 TB_SYSTEM_clear_InLow:  1, TB_SYSTEM_load_InLow:  1  X
+# 4 - Time: 250000000 TB_SYSTEM_clear_InLow:  1, TB_SYSTEM_load_InLow:  1  X

@@ -38,7 +38,6 @@ module TB_SYSTEM();
 	reg TB_SYSTEM_RESET_InHigh;
 	reg TB_SYSTEM_clear_InLow; 
 	reg	TB_SYSTEM_load_InLow;
-	reg [DATAWIDTH_BUS-1:0] TB_SYSTEM_data_InBUS;	
 	
 	reg[7:0] random1;
 	// assign statements (if any)                          
@@ -48,8 +47,7 @@ module TB_SYSTEM();
 		.BB_SYSTEM_CLOCK_50(TB_SYSTEM_CLOCK_50),
 		.BB_SYSTEM_RESET_InHigh(TB_SYSTEM_RESET_InHigh),
 		.BB_SYSTEM_clear_InLow(TB_SYSTEM_clear_InLow),
-		.BB_SYSTEM_load_InLow(TB_SYSTEM_load_InLow),
-		.BB_SYSTEM_data_InBUS(TB_SYSTEM_data_InBUS)
+		.BB_SYSTEM_load_InLow(TB_SYSTEM_load_InLow)
 	);
 initial                                                
 begin                                                  
@@ -79,13 +77,12 @@ initial begin
 			#10000000
 			TB_SYSTEM_load_InLow <= 1'b1;
 			random1 <= $random;
-			TB_SYSTEM_data_InBUS <= random1;
 			#10000000
 			TB_SYSTEM_load_InLow <= 1'b0;
 			#10000000
 			TB_SYSTEM_load_InLow <= 1'b1;
 			#10000000
-			$display("%1d - Time: %2d TB_SYSTEM_clear_InLow: %2d, TB_SYSTEM_load_InLow: %2d, TB_SYSTEM_data_InBUS: %2d, TB_SYSTEM_data_OutBUS: %2d", ii, $time, TB_SYSTEM_clear_InLow,  TB_SYSTEM_load_InLow, TB_SYSTEM_data_InBUS,TB_SYSTEM_data_OutBUS) ;        
+			$display("%1d - Time: %2d TB_SYSTEM_clear_InLow: %2d, TB_SYSTEM_load_InLow: %2d", ii, $time, TB_SYSTEM_clear_InLow,  TB_SYSTEM_load_InLow,TB_SYSTEM_data_OutBUS) ;        
 	end
 	//#(TCK*10000) $finish;	
 @eachvec;

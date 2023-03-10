@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim
 vBB_SYSTEM
-Z1 !s110 1678484042
+Z1 !s110 1678484596
 !i10b 1
 !s100 YeQ`G^>VnN5ZcXPWYo0>60
 IEFK2j=N=fn>AKc<jaeT391
@@ -23,7 +23,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1678484042.000000
+Z5 !s108 1678484596.000000
 !s107 C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1|C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v|
 !i113 1
@@ -69,7 +69,7 @@ R4
 r1
 !s85 0
 31
-!s108 1678484041.000000
+!s108 1678484595.000000
 !s107 C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegGENERAL.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl|C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegGENERAL.v|
 !i113 1
@@ -78,7 +78,7 @@ R9
 R7
 n@s@c_@reg@g@e@n@e@r@a@l
 vSC_RegSHIFTER
-R1
+Z10 !s110 1678484597
 !i10b 1
 !s100 >jNV?TlQdVQI6YX:PjS@G0
 I>FhHldn1MlZ_NWHKEa_Ub2
@@ -124,13 +124,13 @@ R9
 R7
 n@s@c_@s@t@a@t@e@m@a@c@h@i@n@e
 vTB_SYSTEM
-!s110 1678484043
+R10
 !i10b 1
-!s100 BiTbc:dnA>zdeEo4ol?dF2
-I2_iV=:`YondNdS`ILgXfM0
+!s100 P_jd@_dzTWokazZ^0zBDl2
+IoTG[7B;_nR?_KVWI[9z5F1
 R2
 R0
-w1678483948
+w1678484571
 8C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim/TB_SYSTEM.vt
 FC:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim/TB_SYSTEM.vt
 L0 19
@@ -138,7 +138,7 @@ R4
 r1
 !s85 0
 31
-!s108 1678484043.000000
+!s108 1678484597.000000
 !s107 C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim/TB_SYSTEM.vt|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim|C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim/TB_SYSTEM.vt|
 !i113 1
