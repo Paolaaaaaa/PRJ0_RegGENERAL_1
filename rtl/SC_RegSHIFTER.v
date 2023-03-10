@@ -24,7 +24,8 @@ module SC_RegSHIFTER #(parameter RegSHIFTER_DATAWIDTH=8)(
 
 	//////////// INPUTS //////////
 	SC_RegSHIFTER_CLOCK_50,
-	SC_RegSHIFTER_shiftselection_In
+	SC_RegSHIFTER_shiftselection_In,
+	SC_RegSHIFTER_RESET_InHigh
 );
 //=======================================================
 //  PARAMETER declarations
@@ -36,6 +37,8 @@ module SC_RegSHIFTER #(parameter RegSHIFTER_DATAWIDTH=8)(
 output	[7:0]	SC_RegSHIFTER_data_OutBUS;// random val
 input		SC_RegSHIFTER_CLOCK_50;// clock
 input		[7:0] SC_RegSHIFTER_shiftselection_In;//  semilla 
+input		SC_RegSHIFTER_RESET_InHigh;
+
 
 //=======================================================
 //  REG/WIRE declarations
@@ -46,12 +49,15 @@ reg [RegSHIFTER_DATAWIDTH-1:0] RegSHIFTER_Signal;
 //  Structural coding
 //=======================================================
 //INPUT LOGIC: COMBINATIONAL
-always @(posedge SC_RegSHIFTER_CLOCK_50)
+always @(posedge SC_RegSHIFTER_CLOCK_50,posedge SC_RegSHIFTER_RESET_InHigh)
 begin
+	if (SC_RegSHIFTER_RESET_InHigh == 1'b1)
+		RegSHIFTER_Register = 1;
+	else
 		RegSHIFTER_Signal = SC_RegSHIFTER_shiftselection_In << 1'b1;
 		RegSHIFTER_Register = RegSHIFTER_Signal ^ RegSHIFTER_Signal[5];
 		
-	end	
+end	
 //STATE REGISTER: SEQUENTIAL
 
 //=======================================================

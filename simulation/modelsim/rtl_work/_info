@@ -7,119 +7,142 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/simulation/modelsim
+Z0 dC:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim
 vBB_SYSTEM
-Z1 !s110 1601295517
+Z1 !s110 1678484042
 !i10b 1
-!s100 iGEX@d;Digk_<XGj6VjGi1
-I?@2fBR]SEJ_3UigCPWO2V2
+!s100 YeQ`G^>VnN5ZcXPWYo0>60
+IEFK2j=N=fn>AKc<jaeT391
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1532371043
-8/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/BB_SYSTEM.v
-F/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/BB_SYSTEM.v
+w1678483136
+8C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v
+FC:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v
 Z3 L0 21
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1601295517.000000
-!s107 /home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/BB_SYSTEM.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1|/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/BB_SYSTEM.v|
+Z5 !s108 1678484042.000000
+!s107 C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1|C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v|
 !i113 1
 Z6 o-vlog01compat -work work
-!s92 -vlog01compat -work work +incdir+/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1
+!s92 -vlog01compat -work work {+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1}
 Z7 tCvgOpt 0
 n@b@b_@s@y@s@t@e@m
 vSC_DEBOUNCE1
 R1
 !i10b 1
 !s100 R1A>6;z02mNBGFV[E4kge0
-IB0T?Ed5MFIg<hBG0>3ZMY1
+I4^4:3<N:1?7]M]JHM5n7K3
 R2
 R0
-w1532031727
-8/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/rtl/SC_DEBOUNCE1.v
-F/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/rtl/SC_DEBOUNCE1.v
+Z8 w1678285055
+8C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_DEBOUNCE1.v
+FC:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_DEBOUNCE1.v
 L0 44
 R4
 r1
 !s85 0
 31
 R5
-!s107 /home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/rtl/SC_DEBOUNCE1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/rtl|/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/rtl/SC_DEBOUNCE1.v|
+!s107 C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_DEBOUNCE1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl|C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_DEBOUNCE1.v|
 !i113 1
 R6
-Z8 !s92 -vlog01compat -work work +incdir+/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/rtl
+Z9 !s92 -vlog01compat -work work {+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl}
 R7
 n@s@c_@d@e@b@o@u@n@c@e1
 vSC_RegGENERAL
 R1
 !i10b 1
 !s100 [6I<n;cl801V>H:zdW>MP2
-IGbN[PXSHcZQjG2?0Y;@Vd2
+IR@=e:PC3nkdT6c5IeNJ_S2
 R2
 R0
-w1550072167
-8/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/rtl/SC_RegGENERAL.v
-F/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/rtl/SC_RegGENERAL.v
+R8
+8C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegGENERAL.v
+FC:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegGENERAL.v
+R3
+R4
+r1
+!s85 0
+31
+!s108 1678484041.000000
+!s107 C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegGENERAL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl|C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegGENERAL.v|
+!i113 1
+R6
+R9
+R7
+n@s@c_@reg@g@e@n@e@r@a@l
+vSC_RegSHIFTER
+R1
+!i10b 1
+!s100 >jNV?TlQdVQI6YX:PjS@G0
+I>FhHldn1MlZ_NWHKEa_Ub2
+R2
+R0
+w1678482932
+8C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegSHIFTER.v
+FC:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegSHIFTER.v
 R3
 R4
 r1
 !s85 0
 31
 R5
-!s107 /home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/rtl/SC_RegGENERAL.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/rtl|/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/rtl/SC_RegGENERAL.v|
+!s107 C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegSHIFTER.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl|C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegSHIFTER.v|
 !i113 1
 R6
-R8
+R9
 R7
-n@s@c_@reg@g@e@n@e@r@a@l
+n@s@c_@reg@s@h@i@f@t@e@r
 vSC_STATEMACHINE
 R1
 !i10b 1
 !s100 =;Va5k=7;SNFEKSIK06Z11
-Il9f74ecJdN]mQ;_Y4b@2O2
+IRaH:H7b0kW[<z:hPCz_2W2
 R2
 R0
-w1551205386
-8/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/rtl/SC_STATEMACHINE.v
-F/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/rtl/SC_STATEMACHINE.v
+R8
+8C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_STATEMACHINE.v
+FC:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_STATEMACHINE.v
 R3
 R4
 r1
 !s85 0
 31
 R5
-!s107 /home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/rtl/SC_STATEMACHINE.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/rtl|/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/rtl/SC_STATEMACHINE.v|
+!s107 C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_STATEMACHINE.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl|C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_STATEMACHINE.v|
 !i113 1
 R6
-R8
+R9
 R7
 n@s@c_@s@t@a@t@e@m@a@c@h@i@n@e
 vTB_SYSTEM
-R1
+!s110 1678484043
 !i10b 1
-!s100 EcJnooiF_k?7eZ178EPb43
-I89Cm<iiF6fRKSLV9gV0Um1
+!s100 BiTbc:dnA>zdeEo4ol?dF2
+I2_iV=:`YondNdS`ILgXfM0
 R2
 R0
-w1551201908
-8/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/simulation/modelsim/TB_SYSTEM.vt
-F/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/simulation/modelsim/TB_SYSTEM.vt
+w1678483948
+8C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim/TB_SYSTEM.vt
+FC:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim/TB_SYSTEM.vt
 L0 19
 R4
 r1
 !s85 0
 31
-R5
-!s107 /home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/simulation/modelsim/TB_SYSTEM.vt|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/simulation/modelsim|/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/simulation/modelsim/TB_SYSTEM.vt|
+!s108 1678484043.000000
+!s107 C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim/TB_SYSTEM.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim|C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim/TB_SYSTEM.vt|
 !i113 1
 R6
-!s92 -vlog01compat -work work +incdir+/home/fsegura/Downloads/PROJECTS/0SEQUENTIALBLOCKS/PRJ0_RegGENERAL_1/simulation/modelsim
+!s92 -vlog01compat -work work {+incdir+C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/simulation/modelsim}
 R7
 n@t@b_@s@y@s@t@e@m
