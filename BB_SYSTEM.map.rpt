@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BB_SYSTEM
-Fri Mar 10 11:54:21 2023
+Fri Mar 10 14:58:32 2023
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -10,20 +10,7 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |BB_SYSTEM|SC_STATEMACHINE:SC_STATEMACHINE_u0|STATE_Register
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Parameter Settings for User Entity Instance: Top-level Entity: |BB_SYSTEM
- 13. Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u0
- 14. Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u1
- 15. Parameter Settings for User Entity Instance: SC_RegGENERAL:SC_RegGENERAL_u0
- 16. Post-Synthesis Netlist Statistics for Top Partition
- 17. Elapsed Time Per Partition
- 18. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -50,20 +37,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Mar 10 11:54:21 2023       ;
+; Analysis & Synthesis Status        ; Failed - Fri Mar 10 14:58:32 2023           ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; BB_SYSTEM                                   ;
 ; Top-level Entity Name              ; BB_SYSTEM                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 71                                          ;
-;     Total combinational functions  ; 70                                          ;
-;     Dedicated logic registers      ; 43                                          ;
-; Total registers                    ; 43                                          ;
-; Total pins                         ; 20                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -163,197 +150,11 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                              ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
-; rtl/SC_RegGENERAL.v              ; yes             ; User Verilog HDL File  ; C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegGENERAL.v   ;         ;
-; rtl/SC_DEBOUNCE1.v               ; yes             ; User Verilog HDL File  ; C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_DEBOUNCE1.v    ;         ;
-; rtl/SC_STATEMACHINE.v            ; yes             ; User Verilog HDL File  ; C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_STATEMACHINE.v ;         ;
-; BB_SYSTEM.v                      ; yes             ; User Verilog HDL File  ; C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v           ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
-
-
-+------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                            ;
-+---------------------------------------------+--------------------------+
-; Resource                                    ; Usage                    ;
-+---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 71                       ;
-;                                             ;                          ;
-; Total combinational functions               ; 70                       ;
-; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 24                       ;
-;     -- 3 input functions                    ; 9                        ;
-;     -- <=2 input functions                  ; 37                       ;
-;                                             ;                          ;
-; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 50                       ;
-;     -- arithmetic mode                      ; 20                       ;
-;                                             ;                          ;
-; Total registers                             ; 43                       ;
-;     -- Dedicated logic registers            ; 43                       ;
-;     -- I/O registers                        ; 0                        ;
-;                                             ;                          ;
-; I/O pins                                    ; 20                       ;
-;                                             ;                          ;
-; Embedded Multiplier 9-bit elements          ; 0                        ;
-;                                             ;                          ;
-; Maximum fan-out node                        ; BB_SYSTEM_CLOCK_50~input ;
-; Maximum fan-out                             ; 43                       ;
-; Total fan-out                               ; 352                      ;
-; Average fan-out                             ; 2.30                     ;
-+---------------------------------------------+--------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                 ;
-+-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Entity Name     ; Library Name ;
-+-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+-----------------+--------------+
-; |BB_SYSTEM                              ; 70 (0)              ; 43 (0)                    ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |BB_SYSTEM                                    ; BB_SYSTEM       ; work         ;
-;    |SC_DEBOUNCE1:SC_DEBOUNCE1_u0|       ; 27 (27)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|SC_DEBOUNCE1:SC_DEBOUNCE1_u0       ; SC_DEBOUNCE1    ; work         ;
-;    |SC_DEBOUNCE1:SC_DEBOUNCE1_u1|       ; 27 (27)             ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|SC_DEBOUNCE1:SC_DEBOUNCE1_u1       ; SC_DEBOUNCE1    ; work         ;
-;    |SC_RegGENERAL:SC_RegGENERAL_u0|     ; 9 (9)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|SC_RegGENERAL:SC_RegGENERAL_u0     ; SC_RegGENERAL   ; work         ;
-;    |SC_STATEMACHINE:SC_STATEMACHINE_u0| ; 7 (7)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |BB_SYSTEM|SC_STATEMACHINE:SC_STATEMACHINE_u0 ; SC_STATEMACHINE ; work         ;
-+-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+-----------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |BB_SYSTEM|SC_STATEMACHINE:SC_STATEMACHINE_u0|STATE_Register                                                                                                                                                                        ;
-+------------------------------+-----------------------------+-----------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+
-; Name                         ; STATE_Register.STATE_LOAD_1 ; STATE_Register.STATE_LOAD_0 ; STATE_Register.STATE_CLEAR_1 ; STATE_Register.STATE_CLEAR_0 ; STATE_Register.STATE_CHECK_0 ; STATE_Register.STATE_START_0 ; STATE_Register.STATE_RESET_0 ;
-+------------------------------+-----------------------------+-----------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+
-; STATE_Register.STATE_RESET_0 ; 0                           ; 0                           ; 0                            ; 0                            ; 0                            ; 0                            ; 0                            ;
-; STATE_Register.STATE_START_0 ; 0                           ; 0                           ; 0                            ; 0                            ; 0                            ; 1                            ; 1                            ;
-; STATE_Register.STATE_CHECK_0 ; 0                           ; 0                           ; 0                            ; 0                            ; 1                            ; 0                            ; 1                            ;
-; STATE_Register.STATE_CLEAR_0 ; 0                           ; 0                           ; 0                            ; 1                            ; 0                            ; 0                            ; 1                            ;
-; STATE_Register.STATE_CLEAR_1 ; 0                           ; 0                           ; 1                            ; 0                            ; 0                            ; 0                            ; 1                            ;
-; STATE_Register.STATE_LOAD_0  ; 0                           ; 1                           ; 0                            ; 0                            ; 0                            ; 0                            ; 1                            ;
-; STATE_Register.STATE_LOAD_1  ; 1                           ; 0                           ; 0                            ; 0                            ; 0                            ; 0                            ; 1                            ;
-+------------------------------+-----------------------------+-----------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+
-
-
-+--------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                       ;
-+-----------------------------------------------------+--------------------+
-; Register name                                       ; Reason for Removal ;
-+-----------------------------------------------------+--------------------+
-; SC_STATEMACHINE:SC_STATEMACHINE_u0|STATE_Register~4 ; Lost fanout        ;
-; SC_STATEMACHINE:SC_STATEMACHINE_u0|STATE_Register~5 ; Lost fanout        ;
-; SC_STATEMACHINE:SC_STATEMACHINE_u0|STATE_Register~6 ; Lost fanout        ;
-; SC_STATEMACHINE:SC_STATEMACHINE_u0|STATE_Register~7 ; Lost fanout        ;
-; Total Number of Removed Registers = 4               ;                    ;
-+-----------------------------------------------------+--------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 43    ;
-; Number of registers using Synchronous Clear  ; 22    ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 15    ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 8     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |BB_SYSTEM|SC_RegGENERAL:SC_RegGENERAL_u0|RegGENERAL_Register[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |BB_SYSTEM ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; DATAWIDTH_BUS  ; 8     ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u0 ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; N              ; 11    ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: SC_DEBOUNCE1:SC_DEBOUNCE1_u1 ;
-+----------------+-------+--------------------------------------------------+
-; Parameter Name ; Value ; Type                                             ;
-+----------------+-------+--------------------------------------------------+
-; N              ; 11    ; Signed Integer                                   ;
-+----------------+-------+--------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: SC_RegGENERAL:SC_RegGENERAL_u0 ;
-+----------------------+-------+----------------------------------------------+
-; Parameter Name       ; Value ; Type                                         ;
-+----------------------+-------+----------------------------------------------+
-; RegGENERAL_DATAWIDTH ; 8     ; Signed Integer                               ;
-+----------------------+-------+----------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 20                          ;
-; cycloneiii_ff         ; 43                          ;
-;     CLR               ; 7                           ;
-;     ENA CLR           ; 8                           ;
-;     SCLR              ; 22                          ;
-;     plain             ; 6                           ;
-; cycloneiii_lcell_comb ; 70                          ;
-;     arith             ; 20                          ;
-;         2 data inputs ; 20                          ;
-;     normal            ; 50                          ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 14                          ;
-;         3 data inputs ; 9                           ;
-;         4 data inputs ; 24                          ;
-;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.99                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:02     ;
-+----------------+--------------+
 
 
 +-------------------------------+
@@ -362,7 +163,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Fri Mar 10 11:53:42 2023
+    Info: Processing started: Fri Mar 10 14:58:09 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BB_SYSTEM -c BB_SYSTEM
 Info (20032): Parallel compilation is enabled and will use up to 4 processors
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_reggeneral.v
@@ -371,25 +172,18 @@ Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_
     Info (12023): Found entity 1: SC_DEBOUNCE1 File: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_DEBOUNCE1.v Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_statemachine.v
     Info (12023): Found entity 1: SC_STATEMACHINE File: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_STATEMACHINE.v Line: 21
+Warning (10238): Verilog Module Declaration warning at BB_SYSTEM.v(30): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "BB_SYSTEM" File: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v Line: 30
 Info (12021): Found 1 design units, including 1 entities, in source file bb_system.v
     Info (12023): Found entity 1: BB_SYSTEM File: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v Line: 21
-Info (12127): Elaborating entity "BB_SYSTEM" for the top level hierarchy
-Info (12128): Elaborating entity "SC_DEBOUNCE1" for hierarchy "SC_DEBOUNCE1:SC_DEBOUNCE1_u0" File: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v Line: 60
-Warning (10230): Verilog HDL assignment warning at SC_DEBOUNCE1.v(70): truncated value with size 32 to match size of target (11) File: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_DEBOUNCE1.v Line: 70
-Info (12128): Elaborating entity "SC_STATEMACHINE" for hierarchy "SC_STATEMACHINE:SC_STATEMACHINE_u0" File: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v Line: 78
-Info (12128): Elaborating entity "SC_RegGENERAL" for hierarchy "SC_RegGENERAL:SC_RegGENERAL_u0" File: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/BB_SYSTEM.v Line: 88
-Info (286030): Timing-Driven Synthesis is running
-Info (17049): 4 registers lost all their fanouts during netlist optimizations.
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 91 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 71 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4777 megabytes
-    Info: Processing ended: Fri Mar 10 11:54:21 2023
-    Info: Elapsed time: 00:00:39
-    Info: Total CPU time (on all processors): 00:01:01
+Warning (10238): Verilog Module Declaration warning at SC_RegSHIFTER.v(28): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "SC_RegSHIFTER" File: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegSHIFTER.v Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file rtl/sc_regshifter.v
+    Info (12023): Found entity 1: SC_RegSHIFTER File: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegSHIFTER.v Line: 21
+Error (10231): Verilog HDL error at SC_RegSHIFTER.v(38): value cannot be assigned to input "SC_RegSHIFTER_shiftselection_In" File: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegSHIFTER.v Line: 38
+Error (10137): Verilog HDL Procedural Assignment error at SC_RegSHIFTER.v(52): object "SC_RegSHIFTER_data_OutBUS" on left-hand side of assignment must have a variable data type File: C:/Users/El supremo/Documents/Git/PRJ0_RegGENERAL_1/PRJ0_RegGENERAL_1/rtl/SC_RegSHIFTER.v Line: 52
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 2 warnings
+    Error: Peak virtual memory: 4700 megabytes
+    Error: Processing ended: Fri Mar 10 14:58:33 2023
+    Error: Elapsed time: 00:00:24
+    Error: Total CPU time (on all processors): 00:00:56
 
 
