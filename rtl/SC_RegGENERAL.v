@@ -35,7 +35,7 @@ module SC_RegGENERAL #(parameter RegGENERAL_DATAWIDTH=8)(
 //=======================================================
 //  PORT declarations
 //=======================================================
-output		[RegGENERAL_DATAWIDTH-1:0]	SC_RegGENERAL_data_OutBUS;
+output	[RegGENERAL_DATAWIDTH-1:0]	SC_RegGENERAL_data_OutBUS;
 input		SC_RegGENERAL_CLOCK_50;
 input		SC_RegGENERAL_RESET_InHigh;
 input		SC_RegGENERAL_clear_InLow;
@@ -53,9 +53,9 @@ reg [RegGENERAL_DATAWIDTH-1:0] RegGENERAL_Signal;
 //INPUT LOGIC: COMBINATIONAL
 always @(*)
 begin
-	if (SC_RegGENERAL_clear_InLow == 1'b0)
+	if (SC_RegGENERAL_clear_InLow == 1'b1)
 		RegGENERAL_Signal = 0;
-	else if (SC_RegGENERAL_load_InLow == 1'b0)
+	else if (SC_RegGENERAL_load_InLow == 1'b1)
 		RegGENERAL_Signal = SC_RegGENERAL_data_InBUS;
 	else
 		RegGENERAL_Signal = RegGENERAL_Register;

@@ -64,12 +64,13 @@ always
 initial begin                                                  
 // code executes for every event on sensitivity list   
 // insert code here --> begin     
-	random1 <= $random;
-	#0 		TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b1; TB_SYSTEM_load_InLow <= 1'b1; 
-	#10000000 	TB_SYSTEM_RESET_InHigh <= 1'b1; TB_SYSTEM_clear_InLow <= 1'b1; TB_SYSTEM_load_InLow <= 1'b1; 
-	#10000000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b1; TB_SYSTEM_load_InLow <= 1'b1; 
-	#10000000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b1; TB_SYSTEM_load_InLow <= 1'b0; 
+	#0 		TB_SYSTEM_RESET_InHigh <= 1'b1; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; 
+	#10000000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; 
 	#10000000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; 
+	#10000000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b1; TB_SYSTEM_load_InLow <= 1'b0;
+	#10000000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; 
+	#10000000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b1; TB_SYSTEM_load_InLow <= 1'b0;
+
 	#10000000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b1; TB_SYSTEM_load_InLow <= 1'b1;
 	
    for (ii=0; ii<5; ii=ii+1)

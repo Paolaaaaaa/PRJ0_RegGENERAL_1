@@ -26,7 +26,6 @@ module BB_SYSTEM (
 	BB_SYSTEM_RESET_InHigh,
 	BB_SYSTEM_clear_InLow, 
 	BB_SYSTEM_load_InLow
-	//BB_SYSTEM_data_InBUS
 );
 //=======================================================
 //  PARAMETER declarations
@@ -40,7 +39,6 @@ input		BB_SYSTEM_CLOCK_50;
 input		BB_SYSTEM_RESET_InHigh;
 input		BB_SYSTEM_clear_InLow;
 input		BB_SYSTEM_load_InLow;
-//input		[DATAWIDTH_BUS-1:0]	BB_SYSTEM_data_InBUS;
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
@@ -55,7 +53,8 @@ wire random_cwireBUS_0;
 //=======================================================
 SC_DEBOUNCE1 SC_DEBOUNCE1_u0 (
 // port map - connection between master ports and signals/registers   
-	.SC_DEBOUNCE1_button_Out(BB_SYSTEM_clear_InLow_cwire),
+	.SC_DEBOUNCE1_button_Out(
+	),
 	.SC_DEBOUNCE1_CLOCK_50(BB_SYSTEM_CLOCK_50),
 	.SC_DEBOUNCE1_RESET_InHigh(BB_SYSTEM_RESET_InHigh),
 	.SC_DEBOUNCE1_button_In(BB_SYSTEM_clear_InLow)

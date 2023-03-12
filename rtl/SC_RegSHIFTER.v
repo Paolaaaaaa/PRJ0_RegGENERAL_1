@@ -52,10 +52,10 @@ reg [RegSHIFTER_DATAWIDTH-1:0] RegSHIFTER_Signal;
 always @(posedge SC_RegSHIFTER_CLOCK_50,posedge SC_RegSHIFTER_RESET_InHigh)
 begin
 	if (SC_RegSHIFTER_RESET_InHigh == 1'b1)
-		RegSHIFTER_Register = 1;
+		RegSHIFTER_Register = 000000001;
 	else
 		RegSHIFTER_Signal = SC_RegSHIFTER_shiftselection_In << 1'b1;
-		RegSHIFTER_Register = RegSHIFTER_Signal ^ RegSHIFTER_Signal[5];
+		RegSHIFTER_Register = RegSHIFTER_Signal ^ RegSHIFTER_Signal[2];
 		
 end	
 //STATE REGISTER: SEQUENTIAL
