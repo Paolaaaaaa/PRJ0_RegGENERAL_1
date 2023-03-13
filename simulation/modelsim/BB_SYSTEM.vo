@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
-// DATE "03/10/2023 16:19:56"
+// DATE "03/13/2023 14:10:13"
 
 // 
 // Device: Altera EP4CE22F17C6 Package FBGA256
@@ -42,18 +42,18 @@ input 	BB_SYSTEM_clear_InLow;
 input 	BB_SYSTEM_load_InLow;
 
 // Design Ports Information
-// BB_SYSTEM_data_OutBUS[0]	=>  Location: PIN_D5,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// BB_SYSTEM_data_OutBUS[1]	=>  Location: PIN_F15,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// BB_SYSTEM_data_OutBUS[2]	=>  Location: PIN_A11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// BB_SYSTEM_data_OutBUS[3]	=>  Location: PIN_A2,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// BB_SYSTEM_data_OutBUS[4]	=>  Location: PIN_R6,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// BB_SYSTEM_data_OutBUS[5]	=>  Location: PIN_B11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// BB_SYSTEM_data_OutBUS[6]	=>  Location: PIN_B10,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// BB_SYSTEM_data_OutBUS[7]	=>  Location: PIN_P11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_data_OutBUS[0]	=>  Location: PIN_A15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// BB_SYSTEM_data_OutBUS[1]	=>  Location: PIN_A13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// BB_SYSTEM_data_OutBUS[2]	=>  Location: PIN_B13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// BB_SYSTEM_data_OutBUS[3]	=>  Location: PIN_A11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// BB_SYSTEM_data_OutBUS[4]	=>  Location: PIN_D1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// BB_SYSTEM_data_OutBUS[5]	=>  Location: PIN_F3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// BB_SYSTEM_data_OutBUS[6]	=>  Location: PIN_B1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// BB_SYSTEM_data_OutBUS[7]	=>  Location: PIN_L3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 8mA
+// BB_SYSTEM_clear_InLow	=>  Location: PIN_J16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 // BB_SYSTEM_CLOCK_50	=>  Location: PIN_R8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 // BB_SYSTEM_RESET_InHigh	=>  Location: PIN_J15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// BB_SYSTEM_load_InLow	=>  Location: PIN_E16,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// BB_SYSTEM_clear_InLow	=>  Location: PIN_E15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// BB_SYSTEM_load_InLow	=>  Location: PIN_J14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
 wire gnd;
@@ -71,10 +71,10 @@ tri1 devoe;
 initial $sdf_annotate("BB_SYSTEM_v.sdo");
 // synopsys translate_on
 
+wire \BB_SYSTEM_clear_InLow~input_o ;
 wire \BB_SYSTEM_CLOCK_50~input_o ;
 wire \BB_SYSTEM_RESET_InHigh~input_o ;
 wire \BB_SYSTEM_load_InLow~input_o ;
-wire \BB_SYSTEM_clear_InLow~input_o ;
 wire \BB_SYSTEM_data_OutBUS[0]~output_o ;
 wire \BB_SYSTEM_data_OutBUS[1]~output_o ;
 wire \BB_SYSTEM_data_OutBUS[2]~output_o ;
@@ -90,7 +90,7 @@ hard_block auto_generated_inst(
 	.devclrn(devclrn),
 	.devoe(devoe));
 
-// Location: IOOBUF_X5_Y34_N16
+// Location: IOOBUF_X38_Y34_N16
 cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[0]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -103,7 +103,7 @@ defparam \BB_SYSTEM_data_OutBUS[0]~output .bus_hold = "false";
 defparam \BB_SYSTEM_data_OutBUS[0]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X53_Y22_N9
+// Location: IOOBUF_X49_Y34_N2
 cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[1]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -116,7 +116,7 @@ defparam \BB_SYSTEM_data_OutBUS[1]~output .bus_hold = "false";
 defparam \BB_SYSTEM_data_OutBUS[1]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X40_Y34_N2
+// Location: IOOBUF_X49_Y34_N9
 cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[2]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -129,7 +129,7 @@ defparam \BB_SYSTEM_data_OutBUS[2]~output .bus_hold = "false";
 defparam \BB_SYSTEM_data_OutBUS[2]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X7_Y34_N9
+// Location: IOOBUF_X40_Y34_N2
 cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[3]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -142,7 +142,7 @@ defparam \BB_SYSTEM_data_OutBUS[3]~output .bus_hold = "false";
 defparam \BB_SYSTEM_data_OutBUS[3]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X14_Y0_N9
+// Location: IOOBUF_X0_Y25_N9
 cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[4]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -155,7 +155,7 @@ defparam \BB_SYSTEM_data_OutBUS[4]~output .bus_hold = "false";
 defparam \BB_SYSTEM_data_OutBUS[4]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X40_Y34_N9
+// Location: IOOBUF_X0_Y26_N16
 cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[5]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -168,7 +168,7 @@ defparam \BB_SYSTEM_data_OutBUS[5]~output .bus_hold = "false";
 defparam \BB_SYSTEM_data_OutBUS[5]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X34_Y34_N16
+// Location: IOOBUF_X0_Y28_N9
 cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[6]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -181,7 +181,7 @@ defparam \BB_SYSTEM_data_OutBUS[6]~output .bus_hold = "false";
 defparam \BB_SYSTEM_data_OutBUS[6]~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOOBUF_X38_Y0_N2
+// Location: IOOBUF_X0_Y10_N23
 cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[7]~output (
 	.i(gnd),
 	.oe(vcc),
@@ -192,6 +192,16 @@ cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[7]~output (
 // synopsys translate_off
 defparam \BB_SYSTEM_data_OutBUS[7]~output .bus_hold = "false";
 defparam \BB_SYSTEM_data_OutBUS[7]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X53_Y14_N8
+cycloneive_io_ibuf \BB_SYSTEM_clear_InLow~input (
+	.i(BB_SYSTEM_clear_InLow),
+	.ibar(gnd),
+	.o(\BB_SYSTEM_clear_InLow~input_o ));
+// synopsys translate_off
+defparam \BB_SYSTEM_clear_InLow~input .bus_hold = "false";
+defparam \BB_SYSTEM_clear_InLow~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: IOIBUF_X27_Y0_N22
@@ -214,7 +224,7 @@ defparam \BB_SYSTEM_RESET_InHigh~input .bus_hold = "false";
 defparam \BB_SYSTEM_RESET_InHigh~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X53_Y17_N8
+// Location: IOIBUF_X53_Y15_N8
 cycloneive_io_ibuf \BB_SYSTEM_load_InLow~input (
 	.i(BB_SYSTEM_load_InLow),
 	.ibar(gnd),
@@ -222,16 +232,6 @@ cycloneive_io_ibuf \BB_SYSTEM_load_InLow~input (
 // synopsys translate_off
 defparam \BB_SYSTEM_load_InLow~input .bus_hold = "false";
 defparam \BB_SYSTEM_load_InLow~input .simulate_z_as = "z";
-// synopsys translate_on
-
-// Location: IOIBUF_X53_Y17_N1
-cycloneive_io_ibuf \BB_SYSTEM_clear_InLow~input (
-	.i(BB_SYSTEM_clear_InLow),
-	.ibar(gnd),
-	.o(\BB_SYSTEM_clear_InLow~input_o ));
-// synopsys translate_off
-defparam \BB_SYSTEM_clear_InLow~input .bus_hold = "false";
-defparam \BB_SYSTEM_clear_InLow~input .simulate_z_as = "z";
 // synopsys translate_on
 
 assign BB_SYSTEM_data_OutBUS[0] = \BB_SYSTEM_data_OutBUS[0]~output_o ;
@@ -259,10 +259,10 @@ module hard_block (
 	devoe);
 
 // Design Ports Information
-// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_C1,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_D2,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// ~ALTERA_DCLK~	=>  Location: PIN_H1,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// ~ALTERA_DATA0~	=>  Location: PIN_H2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_C1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_D2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_H1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_H2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 // ~ALTERA_nCEO~	=>  Location: PIN_F16,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
 
 input 	devpor;

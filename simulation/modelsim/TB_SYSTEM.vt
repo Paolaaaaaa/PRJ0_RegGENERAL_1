@@ -37,7 +37,7 @@ module TB_SYSTEM();
 	reg TB_SYSTEM_CLOCK_50;
 	reg TB_SYSTEM_RESET_InHigh;
 	reg TB_SYSTEM_clear_InLow; 
-	reg	TB_SYSTEM_load_InLow;
+	reg TB_SYSTEM_load_InLow;
 	
 	reg[7:0] random1;
 	// assign statements (if any)                          
@@ -64,28 +64,15 @@ always
 initial begin                                                  
 // code executes for every event on sensitivity list   
 // insert code here --> begin     
-	#0 		TB_SYSTEM_RESET_InHigh <= 1'b1; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; 
-	#10000000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; 
-	#10000000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; 
-	#10000000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b1; TB_SYSTEM_load_InLow <= 1'b0;
-	#10000000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; 
-	#10000000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b1; TB_SYSTEM_load_InLow <= 1'b0;
+	#0 		TB_SYSTEM_RESET_InHigh <= 1'b1; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 1 clear = 0 load = 1
+	#1000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; // reset = 0 clar=0 load= 1;
+	#1000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer = 0 load= 0
+	#1000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer = 0 load= 0
+	#1000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer = 0 load= 0
+	#1000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer = 0 load= 0
 
-	#10000000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b1; TB_SYSTEM_load_InLow <= 1'b1;
+	#100000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b1; TB_SYSTEM_load_InLow <= 1'b1;
 	
-   for (ii=0; ii<5; ii=ii+1)
-		begin
-			#10000000
-			TB_SYSTEM_load_InLow <= 1'b1;
-			random1 <= $random;
-			#10000000
-			TB_SYSTEM_load_InLow <= 1'b0;
-			#10000000
-			TB_SYSTEM_load_InLow <= 1'b1;
-			#10000000
-			$display("%1d - Time: %2d TB_SYSTEM_clear_InLow: %2d, TB_SYSTEM_load_InLow: %2d", ii, $time, TB_SYSTEM_clear_InLow,  TB_SYSTEM_load_InLow,TB_SYSTEM_data_OutBUS) ;        
-	end
-	//#(TCK*10000) $finish;	
 @eachvec;
 $finish;                                              
 // --> end                                             

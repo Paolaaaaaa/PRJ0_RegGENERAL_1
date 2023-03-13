@@ -9,7 +9,6 @@ add wave -noupdate /TB_SYSTEM/TB_SYSTEM_CLOCK_50
 add wave -noupdate /TB_SYSTEM/TB_SYSTEM_RESET_InHigh
 add wave -noupdate /TB_SYSTEM/TB_SYSTEM_clear_InLow
 add wave -noupdate /TB_SYSTEM/TB_SYSTEM_load_InLow
-add wave  -radix Unsigned /TB_SYSTEM/TB_SYSTEM_data_InBUS
 add wave  -radix Unsigned /TB_SYSTEM/TB_SYSTEM_data_OutBUS
 
 add wave  -divider SC_DEBOUNCE1_u0
@@ -30,10 +29,12 @@ add wave -radix Unsigned /TB_SYSTEM/BB_SYSTEM_u0/SC_STATEMACHINE_u0/STATE_Regist
 add wave  -divider SC_RegGENERAL_u0
 add wave -noupdate /TB_SYSTEM/BB_SYSTEM_u0/SC_RegGENERAL_u0/SC_RegGENERAL_clear_InLow
 add wave -noupdate /TB_SYSTEM/BB_SYSTEM_u0/SC_RegGENERAL_u0/SC_RegGENERAL_load_InLow
-add wave  -radix Unsigned /TB_SYSTEM/BB_SYSTEM_u0/SC_RegGENERAL_u0/SC_RegGENERAL_data_InBUS
 add wave  -radix Unsigned /TB_SYSTEM/BB_SYSTEM_u0/SC_RegGENERAL_u0/SC_RegGENERAL_data_OutBUS
 
-restart
+add wave -divider SC_RegSHIFTER_r0
+add wave -noupdate /TB_SYSTEM/BB_SYSTEM_r0/SC_RegSHIFTER_r0/SC_RegSHIFTER_shiftselection_In
+add wave -noupdate /TB_SYSTEM/BB_SYSTEM_r0/SC_RegSHIFTER_r0/SC_RegSHIFTER_RESET_InHigh
+add wave -radix Unsigned /TB_SYSTEM/BB_SYSTEM_r0/SC_RegSHIFTER_r0/SC_RegGENERAL_data_OutBUS
 run 500ms
 
 TreeUpdate [SetDefaultTree]
