@@ -35,11 +35,11 @@ module SC_RegSHIFTER #(parameter RegSHIFTER_DATAWIDTH=8)(
 //=======================================================
 //  PORT declarations
 //=======================================================
-output	[7:0]	SC_RegSHIFTER_data_OutBUS;// random val
-output	[7:0]	SC_RegSHIFTER_data_OutBUS_in;// random val
+output	[RegSHIFTER_DATAWIDTH-1:0]	SC_RegSHIFTER_data_OutBUS;// random val
+output	[RegSHIFTER_DATAWIDTH-1:0]	SC_RegSHIFTER_data_OutBUS_in;// random val
 
 input		SC_RegSHIFTER_CLOCK_50;// clock
-input		[7:0] SC_RegSHIFTER_shiftselection_In;//  semilla 
+input		[RegSHIFTER_DATAWIDTH-1:0] SC_RegSHIFTER_shiftselection_In;//  semilla 
 input		SC_RegSHIFTER_RESET_InHigh;
 
 
@@ -48,6 +48,7 @@ input		SC_RegSHIFTER_RESET_InHigh;
 //=======================================================
 reg [RegSHIFTER_DATAWIDTH-1:0] RegSHIFTER_Register;
 reg [RegSHIFTER_DATAWIDTH-1:0] RegSHIFTER_Register2;
+reg [RegSHIFTER_DATAWIDTH-1:0] RegSHIFTER_Register3;
 
 reg [RegSHIFTER_DATAWIDTH-1:0] RegSHIFTER_Signal;
 //=======================================================
@@ -57,12 +58,12 @@ reg [RegSHIFTER_DATAWIDTH-1:0] RegSHIFTER_Signal;
 always @(posedge SC_RegSHIFTER_CLOCK_50,posedge SC_RegSHIFTER_RESET_InHigh)
 begin
 	if (SC_RegSHIFTER_RESET_InHigh == 1'b1)
-		RegSHIFTER_Register = 15;
+		RegSHIFTER_Register3 = 15;
 	else
-		RegSHIFTER_Signal = SC_RegSHIFTER_shiftselection_In << 1 ;
-		RegSHIFTER_Register2= RegSHIFTER_Signal[3];
-		RegSHIFTER_Register = RegSHIFTER_Signal ^ RegSHIFTER_Register2;
-		
+		RegSHIFTER_Register2= SC_RegSHIFTER_shiftselection_In[7:0];
+		RegSHIFTER_Register3 = SC_RegSHIFTER_shiftselection_In ^ RegSHIFTER_Register2;
+		//RegSHIFTER_Register3 = RegSHIFTER_Signal >> 1'b1 ;
+
 end	
 //STATE REGISTER: SEQUENTIAL
 
@@ -70,7 +71,7 @@ end
 //  Outputs
 //=======================================================
 //OUTPUT LOGIC: COMBINATIONAL
-	assign	SC_RegSHIFTER_data_OutBUS = RegSHIFTER_Register;
-	assign SC_RegSHIFTER_data_OutBUS_in= RegSHIFTER_Register;
+	assign	SC_RegSHIFTER_data_OutBUS = RegSHIFTER_Register3;
+	assign SC_RegSHIFTER_data_OutBUS_in= RegSHIFTER_Register3;
 
 endmodule

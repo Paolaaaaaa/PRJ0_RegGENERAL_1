@@ -53,20 +53,20 @@ reg [RegGENERAL_DATAWIDTH-1:0] RegGENERAL_Signal;
 //INPUT LOGIC: COMBINATIONAL
 always @(*)
 begin
-	if (SC_RegGENERAL_clear_InLow == 1'b1)
+	if (SC_RegGENERAL_clear_InLow == 1'b0)
 		RegGENERAL_Signal = 0;
-	else if (SC_RegGENERAL_load_InLow == 1'b1)
+	else if (SC_RegGENERAL_load_InLow == 1'b0)
 		RegGENERAL_Signal = SC_RegGENERAL_data_InBUS;
 	else
 		RegGENERAL_Signal = RegGENERAL_Register;
-	end	
+	end
 //STATE REGISTER: SEQUENTIAL
 always @(posedge SC_RegGENERAL_CLOCK_50, posedge SC_RegGENERAL_RESET_InHigh)
 begin
 	if (SC_RegGENERAL_RESET_InHigh == 1'b1)
-		RegGENERAL_Register = 15;
-	else if (SC_RegGENERAL_load_InLow == 0)
-		RegGENERAL_Register = RegGENERAL_Signal;
+		RegGENERAL_Register <= 1;
+	else
+		RegGENERAL_Register <= RegGENERAL_Signal;
 end
 //=======================================================
 //  Outputs
