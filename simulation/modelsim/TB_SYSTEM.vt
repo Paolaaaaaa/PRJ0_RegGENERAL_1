@@ -65,13 +65,13 @@ initial begin
 // code executes for every event on sensitivity list   
 // insert code here --> begin     
 	#0 		TB_SYSTEM_RESET_InHigh <= 1'b1; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 1 clear = 0 load = 1
-	#1000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; // reset = 0 clar=0 load= 1;
-	#1000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer = 0 load= 0
-	#1000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer = 0 load= 0
-	#1000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer = 0 load= 0
-	#1000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer = 0 load= 0
+	#10	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; // reset = 0 clar=0 load= 1;
+	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer = 0 load= 0
+	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; // reset = 0 claer = 0 load= 1
+	#10	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer = 0 load= 0
+	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; // reset = 0 claer = 0 load= 1
+	#10	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer = 0 load= 0
 
-	#100000 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b1; TB_SYSTEM_load_InLow <= 1'b1;
 	
 @eachvec;
 $finish;                                              

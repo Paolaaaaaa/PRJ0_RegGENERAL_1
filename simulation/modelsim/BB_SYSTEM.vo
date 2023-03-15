@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition"
 
-// DATE "03/13/2023 14:10:13"
+// DATE "03/15/2023 03:08:05"
 
 // 
 // Device: Altera EP4CE22F17C6 Package FBGA256
@@ -92,7 +92,7 @@ hard_block auto_generated_inst(
 
 // Location: IOOBUF_X38_Y34_N16
 cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[0]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -105,7 +105,7 @@ defparam \BB_SYSTEM_data_OutBUS[0]~output .open_drain_output = "false";
 
 // Location: IOOBUF_X49_Y34_N2
 cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[1]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -118,7 +118,7 @@ defparam \BB_SYSTEM_data_OutBUS[1]~output .open_drain_output = "false";
 
 // Location: IOOBUF_X49_Y34_N9
 cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[2]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
@@ -131,7 +131,7 @@ defparam \BB_SYSTEM_data_OutBUS[2]~output .open_drain_output = "false";
 
 // Location: IOOBUF_X40_Y34_N2
 cycloneive_io_obuf \BB_SYSTEM_data_OutBUS[3]~output (
-	.i(gnd),
+	.i(vcc),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),

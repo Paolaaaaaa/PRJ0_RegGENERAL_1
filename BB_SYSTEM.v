@@ -47,6 +47,8 @@ wire	STATEMACHINE_load_cwire;
 wire 	BB_SYSTEM_clear_InLow_cwire;
 wire 	BB_SYSTEM_load_InLow_cwire;
 wire random_cwireBUS_0;
+wire random_cwireBUS_0_in;
+
 
 //=======================================================
 //  Structural coding
@@ -83,9 +85,10 @@ SC_RegSHIFTER #(.RegSHIFTER_DATAWIDTH(DATAWIDTH_BUS)) SC_RegSHIFTER_r0(
 
 	.SC_RegSHIFTER_CLOCK_50(BB_SYSTEM_CLOCK_50),
 	
-	.SC_RegSHIFTER_shiftselection_In(random_cwireBUS_0),
+	.SC_RegSHIFTER_shiftselection_In(random_cwireBUS_0_in),
 	.SC_RegSHIFTER_data_OutBUS(random_cwireBUS_0),
-	.SC_RegSHIFTER_RESET_InHigh(BB_SYSTEM_RESET_InHigh)
+	.SC_RegSHIFTER_RESET_InHigh(BB_SYSTEM_RESET_InHigh),
+	.SC_RegSHIFTER_data_OutBUS_in(random_cwireBUS_0_in)
 );
 
 SC_RegGENERAL #(.RegGENERAL_DATAWIDTH(DATAWIDTH_BUS)) SC_RegGENERAL_u0 (

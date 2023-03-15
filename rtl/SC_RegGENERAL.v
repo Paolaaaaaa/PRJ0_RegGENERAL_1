@@ -64,9 +64,9 @@ begin
 always @(posedge SC_RegGENERAL_CLOCK_50, posedge SC_RegGENERAL_RESET_InHigh)
 begin
 	if (SC_RegGENERAL_RESET_InHigh == 1'b1)
-		RegGENERAL_Register <= 0;
-	else
-		RegGENERAL_Register <= RegGENERAL_Signal;
+		RegGENERAL_Register = 15;
+	else if (SC_RegGENERAL_load_InLow == 0)
+		RegGENERAL_Register = RegGENERAL_Signal;
 end
 //=======================================================
 //  Outputs
