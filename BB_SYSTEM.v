@@ -46,8 +46,8 @@ wire	STATEMACHINE_clear_cwire;
 wire	STATEMACHINE_load_cwire;
 wire 	BB_SYSTEM_clear_InLow_cwire;
 wire 	BB_SYSTEM_load_InLow_cwire;
-wire random_cwireBUS_0;
-wire random_cwireBUS_0_in;
+wire [DATAWIDTH_BUS-1:0]random_cwireBUS_0;
+wire [DATAWIDTH_BUS-1:0]random_cwireBUS_0_in;
 
 
 //=======================================================
@@ -84,7 +84,6 @@ SC_DEBOUNCE1 SC_DEBOUNCE1_u1 (
 SC_RegSHIFTER #(.RegSHIFTER_DATAWIDTH(DATAWIDTH_BUS)) SC_RegSHIFTER_r0(
 
 	.SC_RegSHIFTER_CLOCK_50(BB_SYSTEM_CLOCK_50),
-	
 	.SC_RegSHIFTER_shiftselection_In(random_cwireBUS_0_in),
 	.SC_RegSHIFTER_data_OutBUS(random_cwireBUS_0),
 	.SC_RegSHIFTER_RESET_InHigh(BB_SYSTEM_RESET_InHigh),

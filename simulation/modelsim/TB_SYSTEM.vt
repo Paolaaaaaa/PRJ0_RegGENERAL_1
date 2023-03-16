@@ -26,7 +26,6 @@ module TB_SYSTEM();
 	parameter TCK = 20; // clock period in ns
 	parameter CLK_FREQ = 1000000000 / TCK; // Frequenzy in HZ
 	parameter DATAWIDTH_BUS = 8;
-	integer ii=0;
 	// test vector input registers
 // ============================================
 // INTERNAL WIRE AND REG DECLARATIONS
@@ -40,6 +39,10 @@ module TB_SYSTEM();
 	reg TB_SYSTEM_load_InLow;
 	
 	reg[7:0] random1;
+	
+	
+	
+
 	// assign statements (if any)                          
 	BB_SYSTEM BB_SYSTEM_u0 (
 	// port map - connection between master ports and signals/registers   
@@ -63,14 +66,25 @@ always
 	#(TCK/2) TB_SYSTEM_CLOCK_50 <= ~ TB_SYSTEM_CLOCK_50;
 initial begin                                                  
 // code executes for every event on sensitivity list   
-// insert code here --> begin     
-	#0 		TB_SYSTEM_RESET_InHigh <= 1'b1; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 1 clear = 0 load = 1
-	#10	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; // reset = 0 clar=0 load= 1;
-	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer = 0 load= 0
-	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; // reset = 0 claer = 0 load= 1
-	#10	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer = 0 load= 0
-	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; // reset = 0 claer = 0 load= 1
-	#10	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer = 0 load= 0
+// insert code here --> begin   
+	#0 	TB_SYSTEM_RESET_InHigh <= 1'b1; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset= 1 output= 15
+  
+	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; //  load = 1 output= randnum
+	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer =0 load= 0 output= randomint
+	
+	#10	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b1; TB_SYSTEM_load_InLow <= 1'b0; // clear = 1 output= randnum
+	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; //  load = 1 output= randnum
+	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer =0 load= 0 output= randomint	
+	
+	#10	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b1; TB_SYSTEM_load_InLow <= 1'b0; // clear = 1 output= randnum
+	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; //  load = 1 output= randnum
+	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer =0 load= 0 output= randomint		#10	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b1; TB_SYSTEM_load_InLow <= 1'b0; // clear = 1 output= randnum
+	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; //  load = 1 output= randnum
+	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer =0 load= 0 output= randomint		#10	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b1; TB_SYSTEM_load_InLow <= 1'b0; // clear = 1 output= randnum
+	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; //  load = 1 output= randnum
+	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer =0 load= 0 output= randomint		#10	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b1; TB_SYSTEM_load_InLow <= 1'b0; // clear = 1 output= randnum
+	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b1; //  load = 1 output= randnum
+	#10 	TB_SYSTEM_RESET_InHigh <= 1'b0; TB_SYSTEM_clear_InLow <= 1'b0; TB_SYSTEM_load_InLow <= 1'b0; // reset = 0 claer =0 load= 0 output= randomint	
 
 	
 @eachvec;
