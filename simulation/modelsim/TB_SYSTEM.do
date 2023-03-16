@@ -36,7 +36,6 @@ add wave -divider SC_RegSHIFTER_r0
 add wave -noupdate /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_r0/SC_RegSHIFTER_shiftselection_In
 add wave -noupdate /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_r0/SC_RegSHIFTER_RESET_InHigh
 add wave -radix Unsigned /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_r0/SC_RegSHIFTER_data_OutBUS
-add wave -radix Unsigned /TB_SYSTEM/BB_SYSTEM_u0/SC_RegSHIFTER_r0/SC_RegSHIFTER_data_OutBUS_in
 
 run 500ms
 

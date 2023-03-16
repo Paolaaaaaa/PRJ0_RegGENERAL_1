@@ -84,11 +84,11 @@ SC_DEBOUNCE1 SC_DEBOUNCE1_u1 (
 SC_RegSHIFTER #(.RegSHIFTER_DATAWIDTH(DATAWIDTH_BUS)) SC_RegSHIFTER_r0(
 
 	.SC_RegSHIFTER_CLOCK_50(BB_SYSTEM_CLOCK_50),
-	.SC_RegSHIFTER_shiftselection_In(random_cwireBUS_0_in),
+	.SC_RegSHIFTER_shiftselection_In(random_cwireBUS_0),
 	.SC_RegSHIFTER_data_OutBUS(random_cwireBUS_0),
-	.SC_RegSHIFTER_RESET_InHigh(BB_SYSTEM_RESET_InHigh),
-	.SC_RegSHIFTER_data_OutBUS_in(random_cwireBUS_0_in)
-);
+	.SC_RegSHIFTER_RESET_InHigh(BB_SYSTEM_RESET_InHigh)
+
+	);
 
 SC_RegGENERAL #(.RegGENERAL_DATAWIDTH(DATAWIDTH_BUS)) SC_RegGENERAL_u0 (
 // port map - connection between master ports and signals/registers   

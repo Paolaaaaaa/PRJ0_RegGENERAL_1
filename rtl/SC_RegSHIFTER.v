@@ -21,8 +21,7 @@
 module SC_RegSHIFTER #(parameter RegSHIFTER_DATAWIDTH=8)(
 	//////////// OUTPUTS //////////
 	SC_RegSHIFTER_data_OutBUS,
-	SC_RegSHIFTER_data_OutBUS_in,
-
+	
 	//////////// INPUTS //////////
 	SC_RegSHIFTER_CLOCK_50,
 	SC_RegSHIFTER_shiftselection_In,
@@ -36,7 +35,6 @@ module SC_RegSHIFTER #(parameter RegSHIFTER_DATAWIDTH=8)(
 //  PORT declarations
 //=======================================================
 output	[RegSHIFTER_DATAWIDTH-1:0]	SC_RegSHIFTER_data_OutBUS;
-output	[RegSHIFTER_DATAWIDTH-1:0]	SC_RegSHIFTER_data_OutBUS_in;
 
 input		SC_RegSHIFTER_CLOCK_50;
 input		[RegSHIFTER_DATAWIDTH-1:0] SC_RegSHIFTER_shiftselection_In;
@@ -62,7 +60,7 @@ begin
 	else
 		RegSHIFTER_Register2= SC_RegSHIFTER_shiftselection_In[7:0];
 		RegSHIFTER_Signal = SC_RegSHIFTER_shiftselection_In ^ RegSHIFTER_Register2;
-		RegSHIFTER_Register3 = RegSHIFTER_Signal << 1'b1 ;
+		RegSHIFTER_Register3 = RegSHIFTER_Signal << 3;
 
 end	
 //STATE REGISTER: SEQUENTIAL
@@ -72,6 +70,5 @@ end
 //=======================================================
 //OUTPUT LOGIC: COMBINATIONAL
 	assign	SC_RegSHIFTER_data_OutBUS = RegSHIFTER_Register3;
-	assign SC_RegSHIFTER_data_OutBUS_in= RegSHIFTER_Register3;
 
 endmodule
